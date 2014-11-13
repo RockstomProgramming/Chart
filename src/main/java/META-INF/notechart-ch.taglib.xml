@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<facelet-taglib xmlns="http://java.sun.com/xml/ns/javaee"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-facelettaglibrary_2_0.xsd"
+		version="2.0">
+  
+  	<namespace>http://notechart</namespace>
+  
+	 <tag>
+		<tag-name>pie</tag-name>
+		
+		<component>
+			<component-type>PieChart</component-type>
+		</component>
+		
+		<attribute>
+			<name>id</name>
+			<required>true</required>
+			<type>java.lang.String</type>
+		</attribute>
+		
+		<attribute>
+			<name>width</name>
+			<required>true</required>
+			<type>java.lang.String</type>
+		</attribute>
+		
+		<attribute>
+			<name>height</name>
+			<required>true</required>
+			<type>java.lang.String</type>
+		</attribute>
+		
+		<attribute>
+			<name>dataset</name>
+			<required>true</required>
+			<type>java.lang.String</type>
+		</attribute>
+
+		<attribute>
+			<name>type</name>
+			<required>false</required>
+			<type>java.lang.String</type>
+		</attribute>
+	</tag>
+
+	 <tag>
+		<tag-name>bar</tag-name>
+		
+		<component>
+			<component-type>BarChart</component-type>
+		</component>
+		
+		<attribute>
+			<name>id</name>
+			<required>true</required>
+			<type>java.lang.String</type>
+		</attribute>
+		
+		<attribute>
+			<name>width</name>
+			<required>true</required>
+			<type>java.lang.String</type>
+		</attribute>
+		
+		<attribute>
+			<name>height</name>
+			<required>true</required>
+			<type>java.lang.String</type>
+		</attribute>
+		
+		<attribute>
+			<name>dataset</name>
+			<required>true</required>
+			<type>java.lang.String</type>
+		</attribute>
+
+		<attribute>
+			<name>type</name>
+			<required>false</required>
+			<type>java.lang.String</type>
+		</attribute>
+	</tag>
+
+	 <tag>
+		<tag-name>line</tag-name>
+		
+		<component>
+			<component-type>LineChart</component-type>
+		</component>
+		
+		<attribute>
+			<name>id</name>
+			<required>true</required>
+			<type>java.lang.String</type>
+		</attribute>
+		
+		<attribute>
+			<name>width</name>
+			<required>true</required>
+			<type>java.lang.String</type>
+		</attribute>
+		
+		<attribute>
+			<name>height</name>
+			<required>true</required>
+			<type>java.lang.String</type>
+		</attribute>
+		
+		<attribute>
+			<name>dataset</name>
+			<required>true</required>
+			<type>java.lang.String</type>
+		</attribute>
+
+		<attribute>
+			<name>type</name>
+			<required>false</required>
+			<type>java.lang.String</type>
+		</attribute>
+	</tag>
+
+	 <tag>
+		<tag-name>doughnut</tag-name>
+		
+		<component>
+			<component-type>DoughnutChart</component-type>
+		</component>
+		
+		<attribute>
+			<name>id</name>
+			<required>true</required>
+			<type>java.lang.String</type>
+		</attribute>
+		
+		<attribute>
+			<name>width</name>
+			<required>true</required>
+			<type>java.lang.String</type>
+		</attribute>
+		
+		<attribute>
+			<name>height</name>
+			<required>true</required>
+			<type>java.lang.String</type>
+		</attribute>
+		
+		<attribute>
+			<name>dataset</name>
+			<required>true</required>
+			<type>java.lang.String</type>
+		</attribute>
+
+		<attribute>
+			<name>type</name>
+			<required>false</required>
+			<type>java.lang.String</type>
+		</attribute>
+	</tag>
+
+	 <tag>
+		<tag-name>polarArea</tag-name>
+		
+		<component>
+			<component-type>PolarAreaChart</component-type>
+		</component>
+		
+		<attribute>
+			<name>id</name>
+			<required>true</required>
+			<type>java.lang.String</type>
+		</attribute>
+		
+		<attribute>
+			<name>width</name>
+			<required>true</required>
+			<type>java.lang.String</type>
+		</attribute>
+		
+		<attribute>
+			<name>height</name>
+			<required>true</required>
+			<type>java.lang.String</type>
+		</attribute>
+		
+		<attribute>
+			<name>dataset</name>
+			<required>true</required>
+			<type>java.lang.String</type>
+		</attribute>
+
+		<attribute>
+			<name>type</name>
+			<required>false</required>
+			<type>java.lang.String</type>
+		</attribute>
+	</tag>
+
+	 <tag>
+		<tag-name>radar</tag-name>
+		
+		<component>
+			<component-type>RadarChart</component-type>
+		</component>
+		
+		<attribute>
+			<name>id</name>
+			<required>true</required>
+			<type>java.lang.String</type>
+		</attribute>
+		
+		<attribute>
+			<name>width</name>
+			<required>true</required>
+			<type>java.lang.String</type>
+		</attribute>
+		
+		<attribute>
+			<name>height</name>
+			<required>true</required>
+			<type>java.lang.String</type>
+		</attribute>
+		
+		<attribute>
+			<name>dataset</name>
+			<required>true</required>
+			<type>java.lang.String</type>
+		</attribute>
+
+		<attribute>
+			<name>type</name>
+			<required>false</required>
+			<type>java.lang.String</type>
+		</attribute>
+	</tag>
+</facelet-taglib>
