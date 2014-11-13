@@ -7,6 +7,12 @@ import br.com.chart.data.BarDataSet;
 import br.com.chart.serie.BarSerie;
 import com.google.gson.Gson;
 
+/**
+ * Classe responsável por gerar gráficos de barras.
+ * @since 13/11/2014
+ * @author Wesley Luiz
+ * @version 1.0.0
+ */
 @FacesComponent("BarChart")
 public class BarChart extends Chart {
 

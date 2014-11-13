@@ -4,6 +4,12 @@ import javax.faces.component.FacesComponent;
 import br.com.chart.data.PieDataSet;
 import com.google.gson.Gson;
 
+/**
+ * Classe responsável por gerar gráficos de torta.
+ * @since 13/11/2014
+ * @author Wesley Luiz
+ * @version 1.0.0
+ */
 @FacesComponent("PieChart")
 public class PieChart extends Chart {
 

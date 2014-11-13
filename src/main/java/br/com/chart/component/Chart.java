@@ -7,6 +7,12 @@ import javax.faces.component.UIComponentBase;
 import javax.faces.context.FacesContext;
 import javax.faces.context.ResponseWriter;
 
+/**
+ * Classe responsável por definir o componente de gráficos padrão.
+ * @since 13/11/2014
+ * @author Wesley Luiz
+ * @version 1.0.0
+ */
 @ResourceDependencies({
 	@ResourceDependency(library = "note", name = "js/Chart.js"),
 	@ResourceDependency(library = "note", name = "js/chart-conf.js"),
@@ -59,6 +65,20 @@ public abstract class Chart extends UIComponentBase {
 		return context.getResponseWriter();
 	}
 
+	/**
+	 * Método responsável por transformar as informações do <i>dataset</i> em uma <code>String</code>
+	 * no formato <code>json</code>, para que o <code>javascript</code> possa interpretá-lo.
+	 * @author Wesley Luiz
+	 * @since 13/11/2014
+	 * @return
+	 */
 	protected abstract String getJsonDataSet();
+	
+	/**
+	 * Método responsável por obter o código <code>javascript</code> que irá gerar o gráfico.
+	 * @author Wesley Luiz
+	 * @since 13/11/2014
+	 * @return
+	 */
 	protected abstract String getCreateChart();
 }

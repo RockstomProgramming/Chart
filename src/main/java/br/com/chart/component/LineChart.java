@@ -3,6 +3,12 @@ package br.com.chart.component;
 import com.google.gson.Gson;
 import br.com.chart.data.LineDataSet;
 
+/**
+ * Classe responsável por gerar gráficos de linha.
+ * @since 13/11/2014
+ * @author Wesley Luiz
+ * @version 1.0.0
+ */
 public class LineChart extends Chart {
 
 	@Override

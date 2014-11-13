@@ -1,5 +1,11 @@
 package br.com.chart.component;
 
+/**
+ * Classe responsável por gerar gráficos de radar.
+ * @since 13/11/2014
+ * @author Wesley Luiz
+ * @version 1.0.0
+ */
 public class RadarChart extends Chart {
 
 	@Override

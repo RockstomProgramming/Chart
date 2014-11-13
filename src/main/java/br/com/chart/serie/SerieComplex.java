@@ -2,11 +2,18 @@ package br.com.chart.serie;
 
 import java.util.List;
 
-public abstract class SerieComplex extends Serie {
+/**
+ * Esta classe é indicada para gráficos complexos que possuam vários valores e labels.
+ * @since 13/11/2014
+ * @author Wesley Luiz
+ * @version 1.0.0
+ */
+public abstract class SerieComplex {
 
 	private List<Number> data;
 	private String fillColor;
 	private String strokeColor;
+	private String label;
 	
 	public List<Number> getData() {
 		return data;
@@ -30,5 +37,13 @@ public abstract class SerieComplex extends Serie {
 
 	public void setStrokeColor(String strokeColor) {
 		this.strokeColor = strokeColor;
+	}
+
+	public String getLabel() {
+		return label;
+	}
+
+	public void setLabel(String label) {
+		this.label = label;
 	}
 }
