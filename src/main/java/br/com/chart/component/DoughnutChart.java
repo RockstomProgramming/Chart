@@ -1,5 +1,6 @@
 package br.com.chart.component;
 
+import javax.faces.component.FacesComponent;
 import br.com.chart.data.PieDataSet;
 import com.google.gson.Gson;
 
@@ -9,6 +10,7 @@ import com.google.gson.Gson;
  * @author Wesley Luiz
  * @version 1.0.0
  */
+@FacesComponent("DoughnutChart")
 public class DoughnutChart extends Chart {
 
 	@Override

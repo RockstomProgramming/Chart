@@ -13,10 +13,10 @@ import javax.faces.context.ResponseWriter;
  * @author Wesley Luiz
  * @version 1.0.0
  */
-@ResourceDependencies({
-	@ResourceDependency(library = "note", name = "js/Chart.js"),
-	@ResourceDependency(library = "note", name = "js/chart-conf.js"),
-	@ResourceDependency(library = "note", name = "css/chart.css")
+@ResourceDependencies({ 
+	@ResourceDependency(library = "note", name = "js/Chart.js"), 
+	@ResourceDependency(library = "note", name = "js/chart-conf.js"), 
+	@ResourceDependency(library = "note", name = "css/chart.css") 
 })
 public abstract class Chart extends UIComponentBase {
 
@@ -33,22 +33,27 @@ public abstract class Chart extends UIComponentBase {
 		String id = (String) getAttributes().get("id");
 		String width = (String) getAttributes().get("width");
 		String height = (String) getAttributes().get("height");
+		String dataset = getJsonDataSet();
 
-		String script = "$(document).ready(function() { var ctx = $(\"#" + id + "\").get(0).getContext(\"2d\"); var chart = " + getCreateChart() + ";});";
-		StringBuilder serieSet = new StringBuilder();
-		serieSet.append("var data = ");
-		serieSet.append(getJsonDataSet());
-		serieSet.append(";");
+		if (dataset != null && !dataset.isEmpty() && !dataset.replace("[]", "").isEmpty()) {
+			String script = "$(document).ready(function() { var ctx = $(\"#" + id + "\").get(0).getContext(\"2d\"); var chart = " + getCreateChart() + ";});";
+			StringBuilder serieSet = new StringBuilder();
+			serieSet.append("var data = ");
+			serieSet.append(dataset);
+			serieSet.append(";");
 
-		writer(context, id, width, height, script, serieSet);
+			writer(context, id, width, height, script, serieSet);
+		}
 	}
 
 	protected void writer(FacesContext context, String id, String width, String height, String script, StringBuilder serieSet) throws IOException {
 		ResponseWriter writer = getResponseWriter(context);
 		writer.startElement("div", this);
-		writer.writeAttribute("class", "content-chart", null);
+//		writer.writeAttribute("class", "content-chart", null);
+		writer.writeAttribute("align", "center", null);
 		writer.startElement("canvas", this);
 		writer.writeAttribute("id", id, null);
+//		writer.writeAttribute("style", "width:"+width+";height:"+height, null);
 		writer.writeAttribute("width", width, null);
 		writer.writeAttribute("height", height, null);
 		writer.endElement("canvas");
@@ -73,7 +78,7 @@ public abstract class Chart extends UIComponentBase {
 	 * @return
 	 */
 	protected abstract String getJsonDataSet();
-	
+
 	/**
 	 * Método responsável por obter o código <code>javascript</code> que irá gerar o gráfico.
 	 * @author Wesley Luiz

@@ -48,9 +48,9 @@ var pieOptions = {
 
     //Number - Amount of animation steps
     animationSteps : 100,
-
-    //String - Animation easing effect
-    animationEasing : "easeOutBounce",
+    
+  //String - Animation easing effect
+    animationEasing : "none",
 
     //Boolean - Whether we animate the rotation of the Doughnut
     animateRotate : true,

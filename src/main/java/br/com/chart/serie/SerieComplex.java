@@ -8,12 +8,11 @@ import java.util.List;
  * @author Wesley Luiz
  * @version 1.0.0
  */
-public abstract class SerieComplex {
+public abstract class SerieComplex extends SerieBasic {
 
 	private List<Number> data;
 	private String fillColor;
 	private String strokeColor;
-	private String label;
 	
 	public List<Number> getData() {
 		return data;
@@ -37,13 +36,5 @@ public abstract class SerieComplex {
 
 	public void setStrokeColor(String strokeColor) {
 		this.strokeColor = strokeColor;
-	}
-
-	public String getLabel() {
-		return label;
-	}
-
-	public void setLabel(String label) {
-		this.label = label;
 	}
 }

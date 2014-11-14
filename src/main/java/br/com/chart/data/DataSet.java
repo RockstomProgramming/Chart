@@ -2,7 +2,7 @@ package br.com.chart.data;
 
 import java.util.ArrayList;
 import java.util.List;
-import br.com.chart.serie.Serie;
+import br.com.chart.serie.SerieBasic;
 
 /**
  * As classes <i>dataset</i> são responsáveis por armazenar os dados e configurações  dos gráficos.
@@ -14,7 +14,7 @@ import br.com.chart.serie.Serie;
  * @author Wesley Luiz
  * @version 1.0.0
  */
-public abstract class DataSet<T extends Serie> {
+public abstract class DataSet<T extends SerieBasic> {
 	
 	/** Atributo series. */
 	private List<T> series;
@@ -42,6 +42,7 @@ public abstract class DataSet<T extends Serie> {
 	 * @since 13/11/2014
 	 * @param serie
 	 */
+	@SuppressWarnings("unchecked")
 	public void addSerie(T... series) {
 		for (T serie : series) {
 			addSerie(serie);

@@ -3,13 +3,17 @@ package br.com.chart.data;
 import br.com.chart.serie.PieSerie;
 
 public class PieDataSet extends DataSet<PieSerie> {
-	
-	private Integer baseColor = 0x6A97C7;
-	
+
+	private Integer colorR = 50;
+	private Integer colorG = 50;
+	private Integer colorB = 50;
+
 	public void addSerie(PieSerie serie) {
 		if (serie.getColor() == null) {
-			serie.setColor("#"+Integer.toHexString(baseColor));
-			baseColor += 111111;
+			serie.setColor("rgb(" + colorR + "," + colorG + "," + colorB + ")");
+			colorR += 10;
+			colorG += 10;
+			colorB += 10;
 		}
 		
 		super.addSerie(serie);

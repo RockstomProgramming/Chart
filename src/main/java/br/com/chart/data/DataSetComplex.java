@@ -2,9 +2,9 @@ package br.com.chart.data;
 
 import java.util.Arrays;
 import java.util.List;
-import br.com.chart.serie.Serie;
+import br.com.chart.serie.SerieComplex;
 
-public abstract class DataSetComplex<T extends Serie> extends DataSet<T> {
+public abstract class DataSetComplex<T extends SerieComplex> extends DataSet<T> {
 
 	private List<String> labels;
 

@@ -1,9 +1,19 @@
 package br.com.chart.serie;
 
+import java.util.List;
+
 public class BarSerie extends SerieComplex {
 	
 	private String highlightFill;
 	private String highlightStroke;
+	
+	public BarSerie() {
+		super();
+	}
+	
+	public BarSerie(List<Number> data) {
+		setData(data);
+	}
 
 	public String getHighlightFill() {
 		return highlightFill;

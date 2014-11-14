@@ -6,19 +6,10 @@ package br.com.chart.serie;
  * @author Wesley Luiz
  * @version 1.0.0
  */
-public abstract class Serie {
+public abstract class Serie extends SerieBasic {
 
-	private String label;
 	private Number value;
 	private String color;
-
-	public String getLabel() {
-		return label;
-	}
-
-	public void setLabel(String label) {
-		this.label = label;
-	}
 
 	public Number getValue() {
 		return value;

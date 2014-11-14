@@ -1,5 +1,6 @@
 package br.com.chart.component;
 
+import javax.faces.component.FacesComponent;
 import com.google.gson.Gson;
 import br.com.chart.data.LineDataSet;
 
@@ -9,6 +10,7 @@ import br.com.chart.data.LineDataSet;
  * @author Wesley Luiz
  * @version 1.0.0
  */
+@FacesComponent("LineChart")
 public class LineChart extends Chart {
 
 	@Override
