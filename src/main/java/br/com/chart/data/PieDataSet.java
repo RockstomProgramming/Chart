@@ -3,19 +3,14 @@ package br.com.chart.data;
 import br.com.chart.serie.PieSerie;
 
 public class PieDataSet extends DataSet<PieSerie> {
+	
+	private String title;
 
-	private Integer colorR = 50;
-	private Integer colorG = 50;
-	private Integer colorB = 50;
+	public String getTitle() {
+		return title;
+	}
 
-	public void addSerie(PieSerie serie) {
-		if (serie.getColor() == null) {
-			serie.setColor("rgb(" + colorR + "," + colorG + "," + colorB + ")");
-			colorR += 10;
-			colorG += 10;
-			colorB += 10;
-		}
-		
-		super.addSerie(serie);
+	public void setTitle(String title) {
+		this.title = title;
 	}
 }
