@@ -2,36 +2,3 @@
  * Author: Wesley L. Zeferino
  */
 @CHARSET "UTF-8";
-
-.leg-table,.leg-content {
-	margin: 5px !important;
-}
-
-.leg-legenda {
-	width: 20px;
-	height: 20px;
-	margin: 0 5px 5px 0;
-	border-radius: 9px;
-}
-
-.leg-content {
-	padding: 5px;
-	float: left;
-	background: #fff;
-	border-radius: 5px;
-	position: absolute;
-	top: 0;
-	right: 20px;
-	border: 1px solid #ccc;
-}
-
-.leg-desc {
-	color: #777;
-}
-
-.content-chart {
-	border: 1px #ccc solid;
-	padding: 10px;
-	border-radius: 5px;
-	float: left;
-}
