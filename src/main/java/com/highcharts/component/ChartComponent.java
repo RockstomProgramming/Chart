@@ -19,14 +19,6 @@ public abstract class ChartComponent extends UIComponentBase {
 	
 	public void gerarGrafico(FacesContext context, AbstractChart chart) throws IOException  {
 		
-		if (chart.getTitle().getText() == null) {
-			chart.setTitle(null);
-		}
-		
-		if (chart.getSubtitle().getText() == null) {
-			chart.setSubtitle(null);
-		}
-		
 		String id = (String) getAttributes().get("id");
 		String width = (String) getAttributes().get("width");
 		String height = (String) getAttributes().get("height");
