@@ -16,6 +16,12 @@ public final class ColumnChartBuilder {
 		return new ColumnChartBuilder();
 	}
 	
+	public ColumnChartBuilder setStyleClass(String styleClass) {
+		chart.setStyleClass(styleClass);
+		
+		return this;
+	}
+	
 	public ColumnChartBuilder addSerie(String name, List<Number> values) {
 		return addSerie(name, values.toArray());
 	}
@@ -60,7 +66,7 @@ public final class ColumnChartBuilder {
 		chart.addTitle(title);
 		chart.addSubtitle(subTitle);
 		chart.getTooltip().setHeaderFormat("<span style=\"font-size:10px\">{point.key}</span><table>");
-		chart.getTooltip().setPointFormat("<tr><td style=\"color:{series.color};padding:0\">{series.name}: </td><td style=\"padding:0\"><b>{point.y:.2f}</b></td></tr>");
+		chart.getTooltip().setPointFormat("<tr><td style=\"color:{series.color};padding:0\">{series.name}: </td><td style=\"padding:0\"><b>{point.y:.0f}</b></td></tr>");
 		chart.getTooltip().setFooterFormat("</table>");
 		chart.getTooltip().setShared(true);
 		chart.getTooltip().setUseHTML(true);

@@ -22,6 +22,7 @@ public abstract class ChartComponent extends UIComponentBase {
 		String id = (String) getAttributes().get("id");
 		String width = (String) getAttributes().get("width");
 		String height = (String) getAttributes().get("height");
+		String styleClass = chart.getStyleClass();
 		
 		ResponseWriter writer = context.getResponseWriter();
 		writer.startElement("script", this);
@@ -39,6 +40,11 @@ public abstract class ChartComponent extends UIComponentBase {
 		writer.startElement("div", this);
 		writer.writeAttribute("id", id, null);
 		writer.writeAttribute("style", "min-width: 310px; height:" + height + "; width: " + width + "; margin: 0 auto", null);
+		
+		if (styleClass != null && !styleClass.isEmpty()) {
+			writer.writeAttribute("class", styleClass, null);
+		}
+		
 		writer.endElement("div");
 	}
 	

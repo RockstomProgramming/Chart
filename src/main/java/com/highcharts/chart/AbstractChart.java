@@ -25,6 +25,7 @@ public abstract class AbstractChart {
 	@Expose private PlotOptions plotOptions;
 	@Expose private Credits credits;
 	@Expose private Legend legend;
+	private String styleClass;
 	
 	public AbstractChart() {
 		setChart(new Chart());
@@ -96,5 +97,13 @@ public abstract class AbstractChart {
 
 	public void setLegend(Legend legend) {
 		this.legend = legend;
+	}
+
+	public String getStyleClass() {
+		return styleClass;
+	}
+
+	public void setStyleClass(String styleClass) {
+		this.styleClass = styleClass;
 	}
 }
