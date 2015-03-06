@@ -2,8 +2,14 @@ package com.highcharts.chart.area.opt;
 
 import com.google.gson.annotations.Expose;
 
+/**
+ * Arquivo: AreaOptions.java <br/>
+ * @since 06/03/2015
+ * @author Wesley Luiz
+ * @version 1.0.0
+ */
 public class AreaOptions {
-	
+
 	@Expose private Marker marker;
 	@Expose private Number pointStart;
 	@Expose private String stacking;
@@ -14,7 +20,7 @@ public class AreaOptions {
 	public AreaOptions() {
 		setMarker(new Marker());
 	}
-	
+
 	public Marker getMarker() {
 		return marker;
 	}

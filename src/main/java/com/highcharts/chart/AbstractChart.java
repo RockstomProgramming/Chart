@@ -8,8 +8,14 @@ import com.highcharts.TooltipChart;
 import com.highcharts.opt.Credits;
 import com.highcharts.opt.PlotOptions;
 
+/**
+ * Arquivo: AbstractChart.java <br/>
+ * @since 06/03/2015
+ * @author Wesley Luiz
+ * @version 1.0.0
+ */
 public abstract class AbstractChart {
-	
+
 	public static final String PIE = "pie";
 	public static final String AREA = "area";
 	public static final String AREA_SPLINE = "areaspline";
@@ -17,7 +23,7 @@ public abstract class AbstractChart {
 	public static final String COLUMN = "column";
 	public static final String LINE = "line";
 	public static final String BAR = "bar";
-	
+
 	@Expose private Chart chart;
 	@Expose private TitleChart title;
 	@Expose private TitleChart subtitle;
@@ -25,8 +31,9 @@ public abstract class AbstractChart {
 	@Expose private PlotOptions plotOptions;
 	@Expose private Credits credits;
 	@Expose private Legend legend;
+	@Expose private String[] colors;
 	private String styleClass;
-	
+
 	public AbstractChart() {
 		setChart(new Chart());
 		setTitle(new TitleChart());
@@ -42,7 +49,7 @@ public abstract class AbstractChart {
 	public void addSubtitle(String subTitle) {
 		getSubtitle().setText(subTitle);
 	}
-	
+
 	public Chart getChart() {
 		return chart;
 	}
@@ -105,5 +112,13 @@ public abstract class AbstractChart {
 
 	public void setStyleClass(String styleClass) {
 		this.styleClass = styleClass;
+	}
+
+	public String[] getColors() {
+		return colors;
+	}
+
+	public void setColors(String[] colors) {
+		this.colors = colors;
 	}
 }

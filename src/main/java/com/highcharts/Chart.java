@@ -3,6 +3,12 @@ package com.highcharts;
 import com.google.gson.annotations.Expose;
 import com.highcharts.opt.Options3d;
 
+/**
+ * Arquivo: Chart.java <br/>
+ * @since 06/03/2015
+ * @author Wesley Luiz
+ * @version 1.0.0
+ */
 public class Chart {
 
 	@Expose private String plotBackgroundColor;
@@ -11,11 +17,11 @@ public class Chart {
 	@Expose private Options3d options3d;
 	@Expose private String type;
 	@Expose private Integer spacingBottom;
-	
+
 	public Chart() {
 		setOptions3d(new Options3d());
 	}
-	
+
 	public String getPlotBackgroundColor() {
 		return plotBackgroundColor;
 	}

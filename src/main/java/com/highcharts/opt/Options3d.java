@@ -2,6 +2,12 @@ package com.highcharts.opt;
 
 import com.google.gson.annotations.Expose;
 
+/**
+ * Arquivo: Options3d.java <br/>
+ * @since 06/03/2015
+ * @author Wesley Luiz
+ * @version 1.0.0
+ */
 public class Options3d {
 
 	@Expose private boolean enabled;

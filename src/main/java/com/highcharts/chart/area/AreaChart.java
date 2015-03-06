@@ -7,6 +7,12 @@ import com.highcharts.chart.area.opt.XAxis;
 import com.highcharts.chart.area.opt.YAxis;
 import com.highcharts.opt.PlotOptions;
 
+/**
+ * Arquivo: AreaChart.java <br/>
+ * @since 06/03/2015
+ * @author Wesley Luiz
+ * @version 1.0.0
+ */
 public class AreaChart extends ComplexChart {
 
 	@Expose private XAxis xAxis;

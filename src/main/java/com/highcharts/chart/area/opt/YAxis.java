@@ -5,19 +5,25 @@ import com.highcharts.Label;
 import com.highcharts.Title;
 import com.highcharts.TitleChart;
 
+/**
+ * Arquivo: YAxis.java <br/>
+ * @since 06/03/2015
+ * @author Wesley Luiz
+ * @version 1.0.0
+ */
 public class YAxis {
-	
+
 	@Expose private Title title;
 	@Expose private Label labels;
 
 	public YAxis() {
 		setTitle(new TitleChart());
 	}
-	
+
 	public void setTitle(String title) {
 		getTitle().setText(title);
 	}
-	
+
 	public Title getTitle() {
 		return title;
 	}

@@ -3,6 +3,12 @@ package com.highcharts.chart.pie;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
+/**
+ * Arquivo: Explode.java <br/>
+ * @since 06/03/2015
+ * @author Wesley Luiz
+ * @version 1.0.0
+ */
 public class Explode {
 	@Expose private Object name;
 	@Expose @SerializedName("y") private Object value;
@@ -13,7 +19,7 @@ public class Explode {
 		setName(name);
 		setValue(value);
 	}
-	
+
 	public Object getName() {
 		return name;
 	}

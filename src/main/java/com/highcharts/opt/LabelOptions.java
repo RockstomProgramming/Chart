@@ -2,6 +2,12 @@ package com.highcharts.opt;
 
 import com.google.gson.annotations.Expose;
 
+/**
+ * Arquivo: LabelOptions.java <br/>
+ * @since 06/03/2015
+ * @author Wesley Luiz
+ * @version 1.0.0
+ */
 public class LabelOptions {
 
 	@Expose private static final String DEFAULT_FORMAT = "<b>{point.name}</b>: {point.percentage:.1f} %";

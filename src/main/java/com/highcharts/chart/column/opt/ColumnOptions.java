@@ -2,6 +2,12 @@ package com.highcharts.chart.column.opt;
 
 import com.google.gson.annotations.Expose;
 
+/**
+ * Arquivo: ColumnOptions.java <br/>
+ * @since 06/03/2015
+ * @author Wesley Luiz
+ * @version 1.0.0
+ */
 public class ColumnOptions {
 
 	@Expose private double pointPadding = 0.2;

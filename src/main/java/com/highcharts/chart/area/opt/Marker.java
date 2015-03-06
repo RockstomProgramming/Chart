@@ -2,6 +2,12 @@ package com.highcharts.chart.area.opt;
 
 import com.google.gson.annotations.Expose;
 
+/**
+ * Arquivo: Marker.java <br/>
+ * @since 06/03/2015
+ * @author Wesley Luiz
+ * @version 1.0.0
+ */
 public class Marker {
 
 	@Expose private boolean enabled;
@@ -10,11 +16,11 @@ public class Marker {
 	@Expose private States states;
 	@Expose private Integer lineWidth;
 	@Expose private String lineColor;
-	
+
 	public Marker() {
 		setStates(new States());
 	}
-	
+
 	public boolean isEnabled() {
 		return enabled;
 	}

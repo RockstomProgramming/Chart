@@ -5,6 +5,12 @@ import com.highcharts.Label;
 import com.highcharts.Title;
 import com.highcharts.TitleChart;
 
+/**
+ * Arquivo: XAxis.java <br/>
+ * @since 06/03/2015
+ * @author Wesley Luiz
+ * @version 1.0.0
+ */
 public class XAxis {
 
 	@Expose private Title title;
@@ -12,15 +18,15 @@ public class XAxis {
 	@Expose private boolean allowDecimals;
 	@Expose private String[] categories;
 	@Expose private String tickmarkPlacement;
-	
+
 	public XAxis() {
 		setTitle(new TitleChart());
 	}
-	
+
 	public void setTitle(String title) {
 		getTitle().setText(title);
 	}
-	
+
 	public Title getTitle() {
 		return title;
 	}

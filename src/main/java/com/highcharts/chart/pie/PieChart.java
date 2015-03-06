@@ -7,6 +7,12 @@ import com.highcharts.chart.pie.opt.PieOptions;
 import com.highcharts.opt.PlotOptions;
 import com.highcharts.serie.PieSerie;
 
+/**
+ * Arquivo: PieChart.java <br/>
+ * @since 06/03/2015
+ * @author Wesley Luiz
+ * @version 1.0.0
+ */
 public class PieChart extends AbstractChart {
 
 	@Expose @SerializedName("series") private Object[] arraySerie;

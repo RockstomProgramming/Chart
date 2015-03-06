@@ -7,6 +7,12 @@ import com.highcharts.chart.column.opt.XAxis;
 import com.highcharts.chart.column.opt.YAxis;
 import com.highcharts.opt.PlotOptions;
 
+/**
+ * Arquivo: ColumnChart.java <br/>
+ * @since 06/03/2015
+ * @author Wesley Luiz
+ * @version 1.0.0
+ */
 public class ColumnChart extends ComplexChart {
 
 	@Expose private XAxis xAxis;
@@ -19,7 +25,7 @@ public class ColumnChart extends ComplexChart {
 		getChart().setType(COLUMN);
 		getPlotOptions().setColumn(new ColumnOptions());
 	}
-	
+
 	public XAxis getxAxis() {
 		return xAxis;
 	}

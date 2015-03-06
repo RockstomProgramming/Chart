@@ -2,6 +2,12 @@ package com.highcharts;
 
 import com.google.gson.annotations.Expose;
 
+/**
+ * Arquivo: TooltipChart.java <br/>
+ * @since 06/03/2015
+ * @author Wesley Luiz
+ * @version 1.0.0
+ */
 public class TooltipChart {
 
 	private static final String DEFAULT_FORMAT = "{series.name}: <b>{point.percentage:.1f}%</b>";

@@ -3,6 +3,12 @@ package com.highcharts.chart.pie.opt;
 import com.google.gson.annotations.Expose;
 import com.highcharts.opt.LabelOptions;
 
+/**
+ * Arquivo: PieOptions.java <br/>
+ * @since 06/03/2015
+ * @author Wesley Luiz
+ * @version 1.0.0
+ */
 public class PieOptions {
 
 	@Expose private boolean allowPointSelect = true;
@@ -10,11 +16,11 @@ public class PieOptions {
 	@Expose private String cursor = "pointer";
 	@Expose private LabelOptions dataLabels;
 	@Expose private int depth;
-	
+
 	public PieOptions() {
 		setDataLabels(new LabelOptions());
 	}
-	
+
 	public boolean isAllowPointSelect() {
 		return allowPointSelect;
 	}

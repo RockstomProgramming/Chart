@@ -2,6 +2,12 @@ package com.highcharts.serie;
 
 import com.google.gson.annotations.Expose;
 
+/**
+ * Arquivo: Serie.java <br/>
+ * @since 06/03/2015
+ * @author Wesley Luiz
+ * @version 1.0.0
+ */
 public class Serie {
 
 	@Expose private String name;
